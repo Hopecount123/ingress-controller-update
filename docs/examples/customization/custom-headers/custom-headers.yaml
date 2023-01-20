@@ -3,6 +3,8 @@ data:
   X-Different-Name: "true"
   X-Request-Start: t=${msec}
   X-Using-Nginx-Controller: "true"
+  proxy_hide_header: "X-Powered-By" 
+	proxy_hide_header: "Server"
 kind: ConfigMap
 metadata:
   name: custom-headers
